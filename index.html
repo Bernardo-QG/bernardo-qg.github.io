@@ -1,34 +1,94 @@
-<html>
-	<head>
-		<title>Bernardo QG - Portafilio</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="index.css" />
-		<!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
-		<script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
-		
-	</head>
-</html>
-<body>
-	<!-- Para mover la ruta de servidor web nos metemos a httpd.conf y modificamos DocumentRoot -->
-	<br><br>
-	<!-- !PAGE CONTENT! -->
-	<div class="b-content" style="max-width:1500px">
-		<!-- Header -->
-		<header class="b-panel b-center b-opacity" style="padding:128px 16px">
-		<h2 class="">Ing. Sistemas Computacionales</h2>
-		<h1>Bernardo Quintino Guzman</h1>
-		<p class="contacto">https://github.com/Bernardo-QG</p>
-		
-		<div class="">
-			<div class="">
-			<a href="#" class="">Home</a>
-			<a href="#" class="">Portfolio</a>
-			<a href="#" class="">Contact</a>
-			</div>
-		</div>
-		</header>
-	</div>
-</body>
+<!DOCTYPE html>
+<!-- from site: https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ -->
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
 
- 
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32-2.png" />
+
+        <!-- Animate CSS CDN site:https://animate.style/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <title>Bernardo QG | Developer</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <h1>Bernardo Quintino Guzman</h1>
+            <ul class="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu"><ion-icon class="bars" name="menu-outline"></ion-icon></button>
+        </nav>
+        <!-- Hero section -->
+        <section class="hero" id="about">
+            <img src="assets/images/wfh_1.svg" loading="lazy" class="hero-img" />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About me</h2>
+                <p class="bio-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque ea, cupiditate nostrum fugiat vitae, quod voluptatum praesentium nisi corrupti, quasi expedita officia ipsum cum consequatur? Quae consectetur eius quis earum in magnam reiciendis, molestias vel repudiandae esse ut dicta, quo atque nisi! Rem adipisci ullam atque praesentium nulla aliquid id quo eius expedita nihil qui illum dignissimos totam, necessitatibus, omnis maxime inventore, consequatur voluptas quae. Incidunt praesentium autem accusantium, tempore, ad delectus quaerat natus soluta vel voluptatem, fugit aperiam.
+
+                </p>
+            </div>
+            
+        </section>
+        <!-- More about -->
+        <section class="more-about">
+            <h2>More about me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+                autem deleniti cupiditate molestias quis unde quae totam porro dicta
+                iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+                nostrum dolor minus, libero delectus praesentium perferendis
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                consequuntur labore? Ea totam voluptas amet!
+            </p>
+
+        </section>
+        <!-- Skill section -->
+        <section class="skills" id="skills">
+            <h2 class="skill-header">My top skills</h2>
+            <div class="skill-wrapper">
+                <div class="fist-set animate__animated animate__pulse">
+                    <img src="assets/icons/icons8-html-5.svg" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-css3.svg" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-javascript.svg" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="second-set animate__animated animate__pulse">
+                    <img src="assets/icons/icons8-bootstrap.svg" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-react-native.svg" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-git.svg" loading="lazy" class="icon icon-card" />
+                </div>
+            </div>
+        </section>
+        <!-- Proyects section -->
+        <!-- Contact section -->
+        <!-- Social accounts - Fixed to the right -->
+        <!-- Scroll to top -->
+        <!-- Footer section -->
+        <!-- Website scripts -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- Ion icons scripts site:https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>
