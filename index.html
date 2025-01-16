@@ -33,17 +33,18 @@
         </nav>
         <!-- Hero section -->
         <section class="hero" id="about">
-            <img src="assets/images/wfh_1.svg" loading="lazy" class="hero-img" />
+            <!-- site: https://www.freepik.com/ -->
+            <img src="assets/images/dev.svg" loading="lazy" class="hero-img" />
             <div class="bio animate__animated animate__shakeX">
-                <h2 class="bio-title">About me</h2>
+                <h2 class="bio-title">Hi!, I am a software developer</h2>
                 <p class="bio-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque ea, cupiditate nostrum fugiat vitae, quod voluptatum praesentium nisi corrupti, quasi expedita officia ipsum cum consequatur? Quae consectetur eius quis earum in magnam reiciendis, molestias vel repudiandae esse ut dicta, quo atque nisi! Rem adipisci ullam atque praesentium nulla aliquid id quo eius expedita nihil qui illum dignissimos totam, necessitatibus, omnis maxime inventore, consequatur voluptas quae. Incidunt praesentium autem accusantium, tempore, ad delectus quaerat natus soluta vel voluptatem, fugit aperiam.
+                    I studied Computer System Engineering.
                 </p>
             </div>
             
         </section>
         <!-- More about -->
-        <section class="more-about">
+        <section class="more-about" hidden>
             <h2>More about me</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -66,9 +67,11 @@
             <h2 class="skill-header">My top skills</h2>
             <div class="skill-wrapper">
                 <div class="second-set animate__animated animate__pulse">
+                    <!-- site: https://iconos8.es/icons -->
                     <img src="assets/icons/icons8-mysql.svg" loading="lazy" class="icon icon-card" />
                     <img src="assets/icons/php-svgrepo-com.svg" loading="lazy" class="icon icon-card" />
                     <img src="assets/icons/icons8-git.svg" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-c-sharp-logotipo.svg" loading="lazy" class="icon icon-card" />
                 </div>
                 <div class="fist-set animate__animated animate__pulse">
                     <img src="assets/icons/icons8-html-5.svg" loading="lazy" class="icon icon-card" />
@@ -79,13 +82,14 @@
         </section>
         <!-- Proyects section -->
         <section class="projects" id="projects">
-            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <h2 class="projects-title">Some of my Projects</h2>
             <div class="projects-container">
+
                 <div class="project-container project-card">
-                    <img src="assets/images/myGitProfile.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">Git Profile</h3>
-                    <p class="project-details">Cuenta en github.</p>
-                    <a href="https://github.com/Bernardo-QG" target="_blank" class="project-link">Check it Out</a>
+                    <img src="assets/images/ruletaGAME.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">RuletaGAME</h3>
+                    <p class="project-details">Es un juego de plataformas multijugador web orientado al aprendizaje.</p>
+                    <a href="https://youtu.be/h8QOkkYL2Lw" target="_blank" class="project-link">Check it Out</a>
                 </div>
 
                 <div class="project-container project-card">
@@ -102,13 +106,49 @@
                     <a href="https://youtu.be/rlEPiNK7Ps4" target="_blank" class="project-link">Check it Out</a>
                 </div>
             </div>
+
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <img src="assets/images/registroWEB.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">RegistroWEB</h3>
+                    <p class="project-details">Es una pagina web que registra la hora de la entrada y salidas de empleados.</p>
+                    <a href="https://youtu.be/_yYCUQ5IJqY" target="_blank" class="project-link">Check it Out</a>
+                </div>
+
+
+                <div class="project-container project-card">
+                    <img src="assets/images/elViajero.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">El Viajero</h3>
+                    <p class="project-details">Ruta mas corta de un punto a otro usando algoritmo del primero mejor.</p>
+                    <a href="https://youtu.be/7IpGZb1dUuA" target="_blank" class="project-link">Check it Out</a>
+                </div>
+
+                <div class="project-container project-card">
+                    <img src="assets/images/guarderiaCADI.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">Guarderia CADI</h3>
+                    <p class="project-details">Es un sistema para llevar el control de entrada y salida de niños, para optimizar la circulación de padres de familia en una guardería.</p>
+                    <a href="https://youtu.be/q1RhCaRLWtU" target="_blank" class="project-link">Check it Out</a>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                
+                <div class="project-container project-card">
+                    <img src="assets/images/computerVision.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">Computer Vision</h3>
+                    <p class="project-details">La aplicación muestra múltiples algoritmos de procesamiento de imágenes.
+                    </p>
+                    <a href="https://youtu.be/u38nVFvWymI" target="_blank" class="project-link">Check it Out</a>
+                </div>
+             
+            </div>
         </section>
         <!-- Contact section -->
-        <section class="contact" id="contact" hidden>
+        <section class="contact" id="contact">
             <h2>Get In Touch With Me</h2>
             <div class="contact-form-container">
                 <div class="contact-form">
-                    <form action="#" method="POST">
+                    <form action="https://formspree.io/f/xnnnrebp" method="POST">
                         <div class="form-control">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="sender-name" placeholder="Enter your name" class="input-field" required />
@@ -117,14 +157,27 @@
                             <label for="email">Email</label>
                             <input type="text" id="email" name="sender-email" placeholder="Enter your email" class="input-field" required />
                         </div>
+                        <div class="form-control">
+                            <label for="massage">Message</label>
+                            <textarea id="message" name="massage" placeholder="Enter your Massage" class="input-field" required cols="60" rows="10"></textarea>
+                        </div>
+                        <input type="submit" id="submit-btn" class="submit-btn" value="Submit">                        
                     </form>
                 </div>
             </div>
 
         </section>
         <!-- Social accounts - Fixed to the right -->
+        <div class="socials">
+            <a href="https://github.com/Bernardo-QG" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"/></a>
+        </div>
         <!-- Scroll to top -->
+        <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-arriba.gif" class="sosicon up-arrow" alt="scroll-up"/></i>
         <!-- Footer section -->
+        <footer>
+            <p class="copy" hidden>&copy; Copyright 2024</p>
+            <p class="copy">Build with &#x2661; by <a href="#" target="_blank">Bernardo QG</a></p>
+        </footer>
         <!-- Website scripts -->
         <script src="assets/js/app.js"></script>
 

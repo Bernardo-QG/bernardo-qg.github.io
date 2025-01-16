@@ -10,14 +10,15 @@
     --bg-color: #2e2e2e;
     --bg-color-card: #3b3b3b;
     --primary-color: #f1f1f1;
-    --secundary-color: #e4362a;
+    --secundary-color: #ffab20;
     --primary-shadow: #191620;
-    --secundary-shadow: #311c1c;
+    --secundary-shadow: #554730;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
     --text-color: #f1f1f1;
+    --text-color-cool: #698acd;
 }
 /* Variable end */
 
@@ -168,7 +169,7 @@ nav ul li {
 .icon-card {
     background-color: var(--bg-color-card);
     border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secundary-shadow);
+    box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
 }
@@ -208,7 +209,7 @@ nav ul li {
 }
 
 .project-container a {
-    color: aqua;
+    color: var(--text-color-cool);
 }
 
 .project-title {
@@ -222,4 +223,103 @@ nav ul li {
     padding: 15px;
     margin: 10px;
     min-height: 20rem;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+    background-color: var(--bg-color-card);
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 3px outset var(--text-color-cool);
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--text-color-cool);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--bg-color-card);
+    border: 3px solid var(--text-color-cool);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+    color: var(--text-color-cool);
+}
+
+.submit-btn:hover {
+    background-color: var(--text-color-cool);
+    border: 3px solid var(--text-color-cool);
+    color: var(--text-color);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
