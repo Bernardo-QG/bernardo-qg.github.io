@@ -7,11 +7,11 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #2d3035;
-    --bg-color-nav: #24282b;
-    --bg-color-card: #373c41;
+    --bg-color: #2e3135;
+    --bg-color-nav: #202325;
+    --bg-color-card: #3a3e42;
     --primary-color: #f1f1f1;
-    --secundary-color: #ff661e;
+    --secundary-color: #ffaa1f;
     --primary-shadow: #191620;
     --secundary-shadow: #554730;
     --bottom-margin: 0.5rem;
@@ -19,7 +19,7 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
     --text-color: #f1f1f1;
-    --text-color-cool: #ff661e;
+    --text-color-cool: #ffaa1f;
 }
 /* Variable end */
 
