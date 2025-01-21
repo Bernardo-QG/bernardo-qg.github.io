@@ -11,6 +11,5 @@ Ideas:
 
 Tema dark and white
 Numero de entradas
-Responsive
 Contenido de json
 Cambiar los proyectos por imagenes y cuando este hover muestre los datos.

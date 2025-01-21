@@ -187,10 +187,9 @@ nav ul li {
 }
 
 .project-pic {
-    /*width: 75%;
-    height: 70%;*/
-    max-height: 11rem;
-    max-width: 22rem;
+    max-width: 90%;
+    max-height: 9.5rem;
+    height: auto;
 } 
 
 .projects-container {
@@ -356,6 +355,14 @@ footer a {
 }
 
 /* Media queries for responsives */
+@media screen and ( max-width: 920px ) {
+
+    .hero {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 @media screen and ( max-width: 720px ) {
     nav {
         padding: 1.5rem 1rem;
@@ -366,9 +373,9 @@ footer a {
         background-color: var(--bg-color-nav);
         flex-direction: column;
         top: 86px;
-        left: 10%;
-        width: 80%;
-        text-align: center;
+        left: 70%;
+        width: 30%;
+        text-align: left;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
@@ -387,8 +394,6 @@ footer a {
 
     .hero {
         margin-top: -7rem;
-        flex-direction: column;
-        gap: 0;
     }
 
     .hero img {
@@ -397,7 +402,56 @@ footer a {
 
     .bio {
         margin-top: -7rem;
-        width: 20.5rem;
+        width: 22rem;
     }
 
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+    }
+
+    .more-about p {
+        text-align: justify;
+    }
+
+    .icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 22rem;
+    }
+
+    .contact-form-container {
+        max-width: 22rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 420px) {
+    .hero img {
+        width: 19.5rem;
+    }
+
+    .bio {
+        width: 19.5rem;
+    }
+
+    .project-container {
+        width: 19.5rem;
+    }
+
+    .contact-form-container {
+        width: 19.5rem;
+    }
 }
