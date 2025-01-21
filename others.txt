@@ -3,3 +3,14 @@ Portafolios:
 https://israelherrera.dev/en
 https://brayanlopez8.github.io/
 https://alkorsan.pages.dev/
+https://espi.me/
+https://sapphic.moe/
+https://bernardofoegbu.is-a.dev/
+
+Ideas:
+
+Tema dark and white
+Numero de entradas
+Responsive
+Contenido de json
+Cambiar los proyectos por imagenes y cuando este hover muestre los datos.

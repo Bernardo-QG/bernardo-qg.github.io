@@ -1,6 +1,15 @@
 <html></html>
 <body>
 	<!-- Para mover la ruta de servidor web nos metemos a httpd.conf y modificamos DocumentRoot -->
-	<center>Hello World!</center>
+	<center hidden>Hello World!</center>
+	<p id="current_window"></p>
+	<!-- Website scripts -->
+	<script >
+		var screen_width = window.screen.width;
+		var screen_height = window.screen.height;
+
+		var current_window = document.getElementById("current_window");
+		current_window.innerHTML = "Browser width "+screen_width+", height "+screen_height+".";
+	</script>
 </body>
 

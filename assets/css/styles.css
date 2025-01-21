@@ -7,10 +7,11 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #2e2e2e;
-    --bg-color-card: #3b3b3b;
+    --bg-color: #2d3035;
+    --bg-color-nav: #24282b;
+    --bg-color-card: #373c41;
     --primary-color: #f1f1f1;
-    --secundary-color: #ffab20;
+    --secundary-color: #ff661e;
     --primary-shadow: #191620;
     --secundary-shadow: #554730;
     --bottom-margin: 0.5rem;
@@ -18,7 +19,7 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
     --text-color: #f1f1f1;
-    --text-color-cool: #698acd;
+    --text-color-cool: #ff661e;
 }
 /* Variable end */
 
@@ -64,7 +65,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-nav);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -339,7 +340,7 @@ footer a {
     margin: 5px 0;
 
     background-color: var(--bg-color-card);
-    border: 3px solid var(--text-color-cool);
+    border: 1px solid var(--text-color-cool);
     border-radius: 5px;
     font-size: 1rem;
     font-weight: var(--bold-font);
@@ -350,7 +351,53 @@ footer a {
 
 .a-button:hover {
     background-color: var(--text-color-cool);
-    border: 3px solid var(--text-color-cool);
+    border: 1px solid var(--text-color-cool);
     color: var(--text-color);
 }
 
+/* Media queries for responsives */
+@media screen and ( max-width: 720px ) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color-nav);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: -7rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        width: 25rem;
+    }
+
+    .bio {
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+
+}
