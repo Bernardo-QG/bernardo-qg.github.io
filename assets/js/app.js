@@ -16,7 +16,9 @@ const nav = document.querySelector("nav");
 burger.addEventListener(
     "click",
     ()=>{
-        ul.classList.toggle("show");
+        const abierto = ul.classList.toggle("show");
+        burger.setAttribute("aria-expanded", String(abierto));
+        burger.setAttribute("aria-label", abierto ? "Close menu" : "Open menu");
     }
 );
 
@@ -27,6 +29,13 @@ const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((link) => {
     link.addEventListener(
-        "click", () => { ul.classList.remove("show"); }
+        "click", () => {
+            ul.classList.remove("show");
+            burger.setAttribute("aria-expanded", "false");
+            burger.setAttribute("aria-label", "Open menu");
+        }
     );
 });
+
+// Current year in the footer
+document.querySelector("#year").textContent = new Date().getFullYear();

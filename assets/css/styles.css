@@ -101,6 +101,7 @@ nav ul li {
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
+    line-height: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -157,17 +158,20 @@ nav ul li {
 
 .more-about {
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
+    padding: 3rem 6rem 1rem;
 }
 
 .more-about h2 {
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: var(--bottom-margin-2);
     text-align: center;
 }
 
 .more-about p {
+    max-width: 46rem;
+    margin: 0 auto;
     line-height: var(--line-height);
     padding: 0.4rem;
+    color: var(--text-color-muted);
 }
 
 .skills {
@@ -183,14 +187,16 @@ nav ul li {
 
 .skill-header,
 .projects-title,
-.contact h2 {
+.contact h2,
+.more-about h2 {
     font-size: 1.9rem;
     font-weight: var(--bolder-font);
 }
 
 .skill-header::after,
 .projects-title::after,
-.contact h2::after {
+.contact h2::after,
+.more-about h2::after {
     content: "";
     display: block;
     width: 3rem;
@@ -217,6 +223,11 @@ nav ul li {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+/* Logos de Simple Icons: no traen margen interno, se les da mas aire */
+.icon-card.icon-logo {
+    padding: 2.6rem;
 }
 
 .icon-card:hover {
@@ -403,6 +414,10 @@ footer a {
 }
 
 .scroll-up {
+    padding: 0;
+    border: none;
+    background: none;
+    line-height: 0;
     position: fixed;
     right: 0.5%;
     bottom: 3%;
@@ -505,6 +520,10 @@ footer a {
     .icon {
         width: 7rem;
         height: 7rem;
+    }
+
+    .icon-card.icon-logo {
+        padding: 1.6rem;
     }
 
     .projects-container {

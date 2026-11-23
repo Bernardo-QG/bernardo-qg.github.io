@@ -6,6 +6,16 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bernardo Quintino Guzman, software developer from Mexico. Web apps with Angular, Spring Boot and MySQL, and modernization of legacy systems." />
+        <meta name="theme-color" content="#1c1f20" />
+
+        <!-- Vista previa al compartir (LinkedIn, WhatsApp, etc.) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bernardo-qg.github.io/" />
+        <meta property="og:title" content="Bernardo Quintino Guzman | Software Developer" />
+        <meta property="og:description" content="Web apps with Angular, Spring Boot and MySQL, and modernization of legacy systems." />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/18334613?s=400&amp;v=4" />
+        <meta name="twitter:card" content="summary" />
         
         <!-- CSS Styles -->
         <link rel="stylesheet" href="assets/css/styles.css" />
@@ -14,8 +24,6 @@
         <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/18334613?s=64&amp;v=4" />
         <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/18334613?s=180&amp;v=4" />
 
-        <!-- Animate CSS CDN site:https://animate.style/ -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
         <title>Bernardo QG | Developer</title>
     </head>
@@ -23,71 +31,74 @@
         <!-- Navbar -->
         <nav>
             <h1>Bernardo Quintino Guzman</h1>
-            <ul class="navigation">
+            <ul class="navigation" id="nav-links">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="burger-menu" id="burger-menu"><ion-icon class="bars" name="menu-outline"></ion-icon></button>
+            <button class="burger-menu" id="burger-menu" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
         </nav>
         <!-- Hero section -->
         <section class="hero" id="about">
             <!-- site: https://www.freepik.com/ -->
-            <img src="assets/images/dev.svg" loading="lazy" class="hero-img" />
-            <div class="bio animate__animated animate__shakeX">
+            <img src="assets/images/dev.svg" class="hero-img" alt="" fetchpriority="high" />
+            <div class="bio">
                 <h2 class="bio-title">Hi, I'm Bernardo</h2>
                 <p class="bio-text">
-                    I studied Computer Systems Engineering, so I like to code.
+                    Computer Systems Engineer and software developer. I build web apps and modernize legacy systems.
                 </p>
                 <p class="bio-text">
-                    from: Guanajuato, México.
+                    Based in Guanajuato, Mexico.
                 </p>
                 <p class="bio-text">
-                    email: b.quintinoguzman@gmail.com
+                    Email: b.quintinoguzman@gmail.com
                 </p>
 
-                <a class="a-button" href="https://drive.google.com/file/d/10MYdyDz9-Cr5oilqmaLNrDklxDkEkoVb/view" target="_blank">mi CV</a>
+                <a class="a-button" href="https://drive.google.com/file/d/10MYdyDz9-Cr5oilqmaLNrDklxDkEkoVb/view" target="_blank" rel="noopener">My CV</a>
             </div>
             
         </section>
         <!-- More about -->
-        <section class="more-about" hidden>
+        <section class="more-about">
             <h2>More about me</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-                nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-                autem deleniti cupiditate molestias quis unde quae totam porro dicta
-                iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+                I'm a software developer from Guanajuato, Mexico, with more than five years of experience
+                building and maintaining business applications.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-                nostrum dolor minus, libero delectus praesentium perferendis
+                Since January 2026 I've worked as an Analyst Developer at Transportes Castores, migrating
+                legacy systems to Angular, Spring Boot and MySQL, and building an RFID-based inventory system.
+                Before that, from 2020 to 2025, I worked remotely as a contract developer for SICAPVIP.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                consequuntur labore? Ea totam voluptas amet!
+                I hold a degree in Computer Systems Engineering from the University of Guanajuato. I enjoy
+                turning old, hard-to-maintain systems into clean, documented software.
             </p>
-
         </section>
         <!-- Skill section -->
         <section class="skills" id="skills">
             <h2 class="skill-header">My top skills</h2>
             <div class="skill-wrapper">
-                <div class="second-set animate__animated animate__pulse">
-                    <!-- site: https://iconos8.es/icons -->
-                    <img src="assets/icons/icons8-mysql.svg" loading="lazy" class="icon icon-card" />
-                    <img src="assets/icons/php-svgrepo-com.svg" loading="lazy" class="icon icon-card" />
-                    <img src="assets/icons/icons8-git.svg" loading="lazy" class="icon icon-card" />
+                <!-- Iconos: https://iconos8.es/icons y https://simpleicons.org -->
+                <div class="skill-set">
+                    <img src="assets/icons/angular.svg" alt="Angular" title="Angular" loading="lazy" class="icon icon-card icon-logo" />
+                    <img src="assets/icons/spring-boot.svg" alt="Spring Boot" title="Spring Boot" loading="lazy" class="icon icon-card icon-logo" />
+                    <img src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" loading="lazy" class="icon icon-card icon-logo" />
                 </div>
-                <div class="fist-set animate__animated animate__pulse">
-                    <img src="assets/icons/icons8-html-5.svg" loading="lazy" class="icon icon-card" />
-                    <img src="assets/icons/icons8-css3.svg" loading="lazy" class="icon icon-card" />
-                    <img src="assets/icons/icons8-javascript.svg" loading="lazy" class="icon icon-card" />
-                </div> 
-                <div class="fist-set animate__animated animate__pulse">
-                    <img src="assets/icons/icons8-c-sharp-logotipo.svg" loading="lazy" class="icon icon-card" />
-                </div>                 
+                <div class="skill-set">
+                    <img src="assets/icons/icons8-mysql.svg" alt="MySQL" title="MySQL" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/php-svgrepo-com.svg" alt="PHP" title="PHP" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-git.svg" alt="Git" title="Git" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="skill-set">
+                    <img src="assets/icons/icons8-javascript.svg" alt="JavaScript" title="JavaScript" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-html-5.svg" alt="HTML5" title="HTML5" loading="lazy" class="icon icon-card" />
+                    <img src="assets/icons/icons8-css3.svg" alt="CSS3" title="CSS3" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="skill-set">
+                    <img src="assets/icons/icons8-c-sharp-logotipo.svg" alt="C#" title="C#" loading="lazy" class="icon icon-card" />
+                </div>
             </div>
         </section>
         <!-- Proyects section -->
@@ -96,71 +107,70 @@
             <div class="projects-container">
 
                 <div class="project-container project-card">
-                    <img src="assets/images/ruletaGAME.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <img src="assets/images/ruletaGAME.png" alt="Screenshot of RuletaGAME" loading="lazy" class="project-pic" />
                     <h3 class="project-title">RuletaGAME</h3>
-                    <p class="project-details">Es un juego de plataformas multijugador web orientado al aprendizaje.</p>
-                    <a href="https://youtu.be/h8QOkkYL2Lw" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">A multiplayer web platform game designed for learning.</p>
+                    <a href="https://youtu.be/h8QOkkYL2Lw" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/images/juegoVida.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">Juego de la vida</h3>
-                    <p class="project-details">Proyecto de escritorio sobre el Juego de la Vida en CSharp WPF.</p>
-                    <a href="https://youtu.be/k0lOm2zTz6M" target="_blank" class="a-button">Check it Out</a>
+                    <img src="assets/images/juegoVida.png" alt="Screenshot of Game of Life" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">Game of Life</h3>
+                    <p class="project-details">Desktop app of Conway's Game of Life built with C# and WPF.</p>
+                    <a href="https://youtu.be/k0lOm2zTz6M" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/images/cafeteria.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <img src="assets/images/cafeteria.png" alt="Screenshot of Cafeteria" loading="lazy" class="project-pic" />
                     <h3 class="project-title">Cafeteria</h3>
-                    <p class="project-details">Es una pagina web que administra la secuencia de una cafetería con los pedidos de platillos, su preparación y entrega.</p>
-                    <a href="https://youtu.be/rlEPiNK7Ps4" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">Web app that manages a cafeteria's order flow, from ordering to preparation and delivery.</p>
+                    <a href="https://youtu.be/rlEPiNK7Ps4" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
             </div>
 
             <div class="projects-container">
                 <div class="project-container project-card">
-                    <img src="assets/images/registroWEB.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <img src="assets/images/registroWEB.png" alt="Screenshot of RegistroWEB" loading="lazy" class="project-pic" />
                     <h3 class="project-title">RegistroWEB</h3>
-                    <p class="project-details">Es una pagina web que registra la hora de la entrada y salidas de empleados.</p>
-                    <a href="https://youtu.be/_yYCUQ5IJqY" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">Web app that records employees' check-in and check-out times.</p>
+                    <a href="https://youtu.be/_yYCUQ5IJqY" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
 
 
                 <div class="project-container project-card">
-                    <img src="assets/images/elViajero.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <img src="assets/images/elViajero.png" alt="Screenshot of El Viajero" loading="lazy" class="project-pic" />
                     <h3 class="project-title">El Viajero</h3>
-                    <p class="project-details">Ruta mas corta de un punto a otro usando algoritmo del primero mejor.</p>
-                    <a href="https://youtu.be/7IpGZb1dUuA" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">Finds the shortest route between two points using a best-first search algorithm.</p>
+                    <a href="https://youtu.be/7IpGZb1dUuA" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/images/guarderiaCADI.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">Guarderia CADI</h3>
-                    <p class="project-details">Es un sistema para llevar el control de entrada y salida de niños, para optimizar la circulación de padres de familia en una guardería.</p>
-                    <a href="https://youtu.be/q1RhCaRLWtU" target="_blank" class="a-button">Check it Out</a>
+                    <img src="assets/images/guarderiaCADI.png" alt="Screenshot of CADI Daycare" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">CADI Daycare</h3>
+                    <p class="project-details">System that tracks children's check-in and check-out to streamline parent traffic at a daycare.</p>
+                    <a href="https://youtu.be/q1RhCaRLWtU" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
             </div>
 
             <div class="projects-container">
                 
                 <div class="project-container project-card">
-                    <img src="/codex-viewer/assets/icons/favicon.svg" alt="Ícono de Codex" loading="lazy" class="project-pic project-icon" />
+                    <img src="/codex-viewer/assets/icons/favicon.svg" alt="Codex icon" loading="lazy" class="project-pic project-icon" />
                     <h3 class="project-title">Codex</h3>
-                    <p class="project-details">Visor de mis notas y guías de desarrollo en Markdown, con secciones, etiquetas, búsqueda y panel de administración sobre Supabase.</p>
-                    <a href="/codex-viewer/" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">Viewer for my development notes and guides in Markdown, with sections, tags, search and an admin panel on Supabase.</p>
+                    <a href="/codex-viewer/" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
                 <div class="project-container project-card">
-                    <img src="/stack-the-skills/img/favicon.svg" alt="Ícono de Stack the Skills" loading="lazy" class="project-pic project-icon" />
+                    <img src="/stack-the-skills/img/favicon.svg" alt="Stack the Skills icon" loading="lazy" class="project-pic project-icon" />
                     <h3 class="project-title">Stack the Skills</h3>
-                    <p class="project-details">Mapa de habilidades para llegar a desarrollador senior y bilingüe: 141 habilidades en 14 dominios, por nivel, complejidad y utilidad.</p>
-                    <a href="/stack-the-skills/" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">Skill map to become a senior, bilingual developer: 141 skills across 14 domains, by level, complexity and usefulness.</p>
+                    <a href="/stack-the-skills/" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
                 <div class="project-container project-card">
-                    <img src="assets/images/computerVision.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                    <img src="assets/images/computerVision.png" alt="Screenshot of Computer Vision" loading="lazy" class="project-pic" />
                     <h3 class="project-title">Computer Vision</h3>
-                    <p class="project-details">La aplicación muestra múltiples algoritmos de procesamiento de imágenes.
-                    </p>
-                    <a href="https://youtu.be/u38nVFvWymI" target="_blank" class="a-button">Check it Out</a>
+                    <p class="project-details">App that showcases multiple image-processing algorithms.</p>
+                    <a href="https://youtu.be/u38nVFvWymI" target="_blank" rel="noopener" class="a-button">Check it Out</a>
                 </div>
              
             </div>
@@ -177,10 +187,10 @@
                         </div>
                         <div class="form-control">
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="sender-email" placeholder="Enter your Email" class="input-field" required />
+                            <input type="email" id="email" name="sender-email" placeholder="Enter your Email" class="input-field" required />
                         </div>
                         <div class="form-control">
-                            <label for="massage">Message</label>
+                            <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Enter your message" class="input-field" required cols="60" rows="10"></textarea>
                         </div>
                         <input type="submit" id="submit-btn" class="submit-btn" value="Submit">                        
@@ -191,24 +201,20 @@
         </section>
         <!-- Social accounts - Fixed to the right -->
         <div class="socials">
-            <a href="https://github.com/Bernardo-QG" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"/></a>
-            <a href="https://www.youtube.com/@bernardoqg8549" target="_blank"><img src="assets/icons/icons8-youtube-96.png" alt="Youtube" class="socicon"/></a>
-            <a href="mailto:b.quintinoguzman@gmail.com" target="_blank"><img src="assets/icons/icons8-sobre-circulado-96.png" alt="Youtube" class="socicon"/></a>
+            <a href="https://github.com/Bernardo-QG" target="_blank" rel="noopener"><img src="assets/icons/icons8-github.gif" alt="GitHub" class="socicon"/></a>
+            <a href="https://www.youtube.com/@bernardoqg8549" target="_blank" rel="noopener"><img src="assets/icons/icons8-youtube-96.png" alt="YouTube" class="socicon"/></a>
+            <a href="mailto:b.quintinoguzman@gmail.com"><img src="assets/icons/icons8-sobre-circulado-96.png" alt="Email" class="socicon"/></a>
 
             
         </div>
         <!-- Scroll to top -->
-        <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-up-64.png" class="sosicon up-arrow" alt="scroll-up"/></i>
+        <button class="scroll-up" id="scroll-up" type="button" aria-label="Back to top"><img src="assets/icons/icons8-up-64.png" class="up-arrow" alt=""/></button>
         <!-- Footer section -->
         <footer>
-            <p class="copy">&copy; 2025 <a href="https://github.com/Bernardo-QG" target="_blank">Bernardo QG</a></p>
+            <p class="copy">&copy; <span id="year">2026</span> <a href="https://github.com/Bernardo-QG" target="_blank" rel="noopener">Bernardo QG</a></p>
         </footer>
         <!-- Website scripts -->
         <script src="assets/js/app.js"></script>
-
-        <!-- Ion icons scripts site:https://ionic.io/ionicons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>
