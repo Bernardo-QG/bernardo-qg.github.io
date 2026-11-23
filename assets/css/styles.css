@@ -236,6 +236,13 @@ nav ul li {
     height: auto;
 } 
 
+/* Proyectos que muestran su icono en lugar de una captura */
+.project-icon {
+    height: 9.5rem;
+    width: auto;
+    padding: 1.5rem;
+}
+
 .projects-container {
     display: flex;
     align-items: center;
