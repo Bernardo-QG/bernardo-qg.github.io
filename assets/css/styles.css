@@ -59,8 +59,7 @@ a:hover {
 
 a:focus-visible,
 button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
+input:focus-visible {
     outline: 2px solid var(--secundary-color);
     outline-offset: 3px;
 }
@@ -380,70 +379,48 @@ nav ul li {
     margin-bottom: var(--bottom-margin-2);
 }
 
-.contact-form-container {
-    background-color: var(--bg-color-card);
+.contact-card {
     max-width: 40.75rem;
     margin: 0 auto;
-    padding: 0.938rem;
-    border-radius: 5px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background-color: var(--bg-color-card);
+    border: 1px solid var(--border-color);
+    border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
 }
 
-.contact-form-container label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-    color: var(--primary-color);
-}
-
-.contact-form-container textarea {
-    min-height: 6.25rem;
-    font-size: 14px;
-}
-
-.contact-form-container .input-field {
-    width: 100%;
-    padding: 0.7rem 0.8rem;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
-    background-color: var(--input-bg);
-    color: var(--text-color);
-    font-family: inherit;
-    font-size: 0.95rem;
-    outline: none;
-    transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.contact-form-container .input-field:focus {
-    border-color: var(--secundary-color);
-    box-shadow: 0 0 0 3px rgba(255, 170, 31, 0.2);
-}
-
-.input-field::placeholder {
+.contact-card p {
+    line-height: var(--line-height);
     color: var(--text-color-muted);
 }
 
-.contact-form-container {
-    border: 1px solid var(--border-color);
-    padding: 1.5rem;
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 1rem;
 }
 
-.submit-btn {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 1rem 0 0;
-    background-color: var(--secundary-color);
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
-    color: var(--on-accent);
-    cursor: pointer;
+.contact-actions .a-button {
+    margin: 0;
 }
 
-.submit-btn:hover {
-    background-color: var(--accent-hover);
+.contact .a-button--ghost {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.contact .a-button--ghost:hover {
+    background-color: transparent;
+    border-color: var(--secundary-color);
+    color: var(--secundary-color);
+}
+
+.contact-card .contact-email {
+    font-size: 0.85rem;
 }
 
 .socials {
@@ -631,9 +608,6 @@ footer a {
         width: 22rem;
     }
 
-    .contact-form-container {
-        max-width: 22rem;
-    }
     
 
 }
@@ -647,7 +621,4 @@ footer a {
         width: 19.5rem;
     }
 
-    .contact-form-container {
-        width: 19.5rem;
-    }
 }

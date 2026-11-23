@@ -15,7 +15,7 @@ The full list, with demos and source code, is on the site.
 
 ## Built with
 
-Plain HTML, CSS and JavaScript, with no frameworks or build step. The contact form uses [Formspree](https://formspree.io/), and the site is hosted on GitHub Pages.
+Plain HTML, CSS and JavaScript, with no frameworks, build step or external services. Hosted on GitHub Pages.
 
 ## Structure
 
