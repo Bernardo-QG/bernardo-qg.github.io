@@ -57,6 +57,14 @@ a:hover {
     color: var(--secundary-color);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--secundary-color);
+    outline-offset: 3px;
+}
+
 body {
     font-family: var(--font-family);
 }
@@ -81,12 +89,15 @@ nav h1 {
 
 nav a {
     color: var(--primary-color);
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
     transition: var(--transition);
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: var(--secundary-color);
-    border-bottom: 2px solid var(--secundary-color);
+    border-bottom-color: var(--secundary-color);
 }
 
 nav ul {
@@ -329,10 +340,35 @@ nav ul li {
     line-height: 1.5;
 }
 
-/* El boton siempre al fondo de la tarjeta, alineado entre tarjetas */
-.project-card .a-button {
-    align-self: center;
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0 1rem 0.6rem;
+    list-style: none;
+}
+
+.project-tags li {
+    padding: 0.15rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background-color: var(--input-bg);
+    color: var(--text-color-muted);
+    font-size: 0.72rem;
+    font-weight: var(--bold-font);
+}
+
+/* Botones siempre al fondo de la tarjeta, alineados entre tarjetas */
+.project-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
     margin: 1rem 0 1.4rem;
+}
+
+.project-actions .a-button {
+    margin: 0;
 }
 
 .contact {
@@ -496,6 +532,19 @@ footer a {
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
     color: var(--on-accent);
+}
+
+/* Boton secundario: contorno, para "Code" */
+.project-container .a-button--ghost {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.project-container .a-button--ghost:hover {
+    background-color: transparent;
+    border-color: var(--secundary-color);
+    color: var(--secundary-color);
 }
 
 /* Media queries for responsives */

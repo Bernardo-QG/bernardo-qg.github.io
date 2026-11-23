@@ -39,3 +39,27 @@ navLink.forEach((link) => {
 
 // Current year in the footer
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+// Highlight the nav link of the section in view
+const secciones = [...navLink].map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+
+function marcarSeccion(id) {
+    navLink.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${id}`));
+}
+
+const observador = new IntersectionObserver(
+    (entradas) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) marcarSeccion(entrada.target.id);
+        });
+    },
+    { rootMargin: "-45% 0px -50% 0px" }
+);
+secciones.forEach((seccion) => observador.observe(seccion));
+
+// At the very bottom the last section may never reach the middle of the screen
+window.addEventListener("scroll", () => {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        marcarSeccion(secciones.at(-1).id);
+    }
+}, { passive: true });
