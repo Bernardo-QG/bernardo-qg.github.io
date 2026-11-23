@@ -3,7 +3,7 @@
 
 /* Variable */
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: "Roboto", sans-serif;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -20,6 +20,11 @@
     --transition: 0.3s;
     --text-color: #f1f1f1;
     --text-color-cool: #ffaa1f;
+    --text-color-muted: #a3a9b0;
+    --border-color: #43474c;
+    --input-bg: #1f2224;
+    --accent-hover: #ffbe55;
+    --on-accent: #1c1f20;
 }
 /* Variable end */
 
@@ -71,6 +76,7 @@ nav {
 
 nav h1 {
     color: var(--primary-color);
+    font-size: 1.35rem;
 }
 
 nav a {
@@ -118,7 +124,8 @@ nav ul li {
 .bio {
     background-color: var(--bg-color-card);
     width: 25rem;
-    padding: 0.625rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
     display:block;
@@ -126,6 +133,21 @@ nav ul li {
 
 .bio h1 {
     margin-bottom: var(--bottom-margin);
+}
+
+.bio-title {
+    margin-bottom: var(--bottom-margin);
+    font-size: 2rem;
+    font-weight: var(--bolder-font);
+}
+
+.bio-text + .bio-text {
+    color: var(--text-color-muted);
+    font-size: 0.95rem;
+}
+
+.bio .a-button {
+    margin-top: 0.75rem;
 }
 
 .bio p {
@@ -159,6 +181,25 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
+.skill-header,
+.projects-title,
+.contact h2 {
+    font-size: 1.9rem;
+    font-weight: var(--bolder-font);
+}
+
+.skill-header::after,
+.projects-title::after,
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
+    background-color: var(--secundary-color);
+}
+
 .skills-wrapper img {
     padding: 1.25rem;
 }
@@ -170,6 +211,8 @@ nav ul li {
 
 .icon-card {
     background-color: var(--bg-color-card);
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition), border-color var(--transition);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
@@ -177,7 +220,8 @@ nav ul li {
 }
 
 .icon-card:hover {
-    background-color: var(--bg-color);
+    transform: translateY(-4px);
+    border-color: var(--secundary-color);
 }
 
 .projects {
@@ -223,11 +267,22 @@ nav ul li {
 
 .project-card {
     background-color: var(--bg-color-card);
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition), border-color var(--transition);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 15px;
     margin: 10px;
     min-height: 20rem;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--secundary-color);
+}
+
+.project-details {
+    color: var(--text-color-muted);
 }
 
 .contact {
@@ -261,37 +316,48 @@ nav ul li {
 
 .contact-form-container .input-field {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0.7rem 0.8rem;
     border-radius: 5px;
-    border: none;
-    border: 3px outset var(--text-color-cool);
-    font-size: 0.875rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.95rem;
     outline: none;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.contact-form-container .input-field:focus {
+    border-color: var(--secundary-color);
+    box-shadow: 0 0 0 3px rgba(255, 170, 31, 0.2);
 }
 
 .input-field::placeholder {
-    padding: 0.5rem;
-    color: var(--text-color-cool);
+    color: var(--text-color-muted);
+}
+
+.contact-form-container {
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
 }
 
 .submit-btn {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: var(--bg-color-card);
-    border: 3px solid var(--text-color-cool);
+    padding: 0.75rem;
+    margin: 1rem 0 0;
+    background-color: var(--secundary-color);
+    border: none;
     border-radius: 5px;
+    font-family: inherit;
     font-size: 1rem;
     font-weight: var(--bold-font);
     transition: var(--transition);
-    color: var(--text-color-cool);
+    color: var(--on-accent);
+    cursor: pointer;
 }
 
 .submit-btn:hover {
-    background-color: var(--text-color-cool);
-    border: 3px solid var(--text-color-cool);
-    color: var(--text-color);
+    background-color: var(--accent-hover);
 }
 
 .socials {
@@ -303,13 +369,22 @@ nav ul li {
 }
 
 .socicon {
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0.15rem 0;
+    opacity: 0.8;
+    transition: opacity var(--transition), transform var(--transition);
     border-radius: 50%;
     background-color: #f1f1f1;
 }
 
+.socicon:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
 footer {
+    color: var(--text-color-muted);
     background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: center;
@@ -334,24 +409,26 @@ footer a {
     border-radius: 50%;
 }
 
-.a-button {
+.a-button,
+.project-container .a-button {
     padding: 7px 25px;
     margin: 5px 0;
 
-    background-color: var(--bg-color-card);
-    border: 1px solid var(--text-color-cool);
+    background-color: var(--secundary-color);
+    border: 1px solid var(--secundary-color);
     border-radius: 5px;
     font-size: 1rem;
     font-weight: var(--bold-font);
     transition: var(--transition);
-    color: var(--text-color-cool);
+    color: var(--on-accent);
     display:inline-block;
 }
 
-.a-button:hover {
-    background-color: var(--text-color-cool);
-    border: 1px solid var(--text-color-cool);
-    color: var(--text-color);
+.a-button:hover,
+.project-container .a-button:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: var(--on-accent);
 }
 
 /* Media queries for responsives */
